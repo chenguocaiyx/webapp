@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+
+    <link rel="stylesheet" href="../css/jquery.mobile.min.css" />
+    <link rel="stylesheet" href="../css/project.css" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+
+    <script src="../script/jquery-2.1.4.min.js"></script>
+    <script src="../script/jquery.mobile.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>登录</title>
+    <script>
+
+    </script>
+    <style>
+        #page{
+            animation:myfirst 10s infinite; /*animation 时间 播放次数*/
+            animation-direction:alternate; /*是否循环交替反向播放动画*/
+      
+        }
+        @keyframes myfirst
+{
+    0% {background:#87CEFF;}
+    25% {background:#54FF9F;}
+    50% {background:#7CCD7C;}
+    75% {background:#63B8FF;}
+    100% {background:#00FFFF;}
+}
+    .login-img{
+        height: 60px;
+        width: 60px;
+    }
+    .login{
+        margin-top: 30px;
+    }
+    .qq{
+        font-size: 40px;
+        color: #FFFFFF;
+    }
+    #userName{
+    margin: 5px 0 1px 20px;
+    padding: 0 10px 0 0;
+    }
+    #passWd{
+    margin: 5px 0 1px 20px;
+    padding: 0 10px 0 0;
+    }
+    </style>
+
+</head>
+<body>
+    <div data-role="page" id="page" class="container-fluid">
+        <div data-role="content" class="login">
+            <div class="bottom">
+            <img src="../images/qq.png" class="login-img " >
+            <h2 class="qq">QQ</h2>
+            </div>
+            <form action="#" method="post">
+                <input type="text" name="userName" id="userName" placeholder="账号" >
+                <input type="password" name="passWd" id="passWd" placeholder="密码">
+                <label>记住密码</label>
+                <select data-role="slider" name="slider" id="slider">
+                    <option value="off">off</option>
+                    <option value="on">on</option>
+                </select>
+                <a href="main.html" data-role="button">登录</a>
+
+            </form>
+
+            <div class="bottom">
+                <a href="#">忘记密码? </a>
+                <a href="register.html" class="right">新用户注册</a>
+            </div>
+<!--501陈国才-->
+            
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

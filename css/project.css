@@ -1,0 +1,23 @@
+.header{
+	/*background: linear-gradient(to right, #BFEFFF, #fff, #BFEFFF);*/
+    background: #1E90FF;
+}
+
+
+/*.ui-icon-person:after {*/
+	/*background-image: url("../image/person.png");*/
+	/*background-size: 18px 18px;*/
+/*}*/
+
+.ui-page-theme-a .ui-btn.ui-btn-active{
+	background-color: #BFEFFF;
+    /*border-color: #BFEFFF;*/
+}
+.bottom{
+	display: flex;
+    flex-direction: row;
+}
+.right{
+    position: fixed;
+    right: 15px;
+}

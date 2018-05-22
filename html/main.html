@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+
+    <link rel="stylesheet" href="../css/jquery.mobile.min.css" />
+    <link rel="stylesheet" href="../css/project.css" />
+
+    <script src="../script/jquery-2.1.4.min.js"></script>
+    <script src="../script/jquery.mobile.min.js"></script>
+
+    <title>首页</title>
+    <script>
+        $(function () {
+            $("#news").click(function () {
+                $("#news_page").show();
+                $("#news_header").show();
+
+                $("iframe").hide();
+            });
+
+            $("#friends").click(function () {
+                $("#news_page").hide();
+                $("#news_header").hide();
+
+
+                $("iframe").show();
+                $("iframe").attr("src","friends.html")
+                    .css("height", $(window).height()).show();
+            });
+
+            $("#activities").click(function () {
+                $("#news_page").hide();
+                $("#news_header").hide();
+
+                $("iframe").show();
+                $("iframe").attr("src","activities.html")
+            });
+        });
+    </script>
+    <!--陈国才-->
+</head>
+<body>
+<div data-role="page" id="main">
+<!--面板-->
+<div data-role="panel" id="myPanel">
+    <h1>个人中心</h1>
+</div>
+<!--页面头部-->
+<div data-role="header" data-position="fixed" id="news_header" data-fullscreen="true" class="header">
+    <a href="#myPanel" data-role="button" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all"></a>
+    <h1>消息</h1>
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-icon-plus ui-btn-icon-notext ui-shadow ui-corner-all">设置</a>
+</div>
+
+    <div data-role="popup" id="myPopup" class="ui-content">
+        <h3>欢迎</h3>
+        <p>这是一个弹窗</p>
+        <p>哈哈哈哈或或或或或或或或或或或或</p>
+    </div>
+    <!--501陈国才-->
+
+<div data-role="content" style="padding: 0;">
+    <div id="news_page" data-role="mian" class="ui-content" ><br><br>
+     <ul data-role="listview">
+            <li >
+                <a href="#">
+                    <img src="../images/qybs.jpg">
+                    <h2>史蒂芬</h2>
+                    <p>Where are you?</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/ls.jpg">
+                    <h2>雷神</h2>
+                    <p>哈哈哈哈或或或或或</p>
+                </a>
+            </li>
+        <!--501陈国才-->
+            <li>
+                <a href="#">
+                    <img src="../images/xh.jpg">
+                    <h2>小黄</h2>
+                    <p>@#*&%@*&%￥#@#*&@</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/zzx.jpg">
+                    <h2>彼得 帕克</h2>
+                    <p>I'm Spider-Man</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/sgdz.jpg">
+                    <h2>罗杰斯队长</h2>
+                    <p>I'm come back!</p>
+                </a>
+            </li>
+
+        </ul>
+<!--陈国才-->
+    </div>
+    <iframe src="news.html" style="width: 100%;height: 100% ;border: 0;display: none"></iframe>
+</div>
+<!--底部导航栏-->
+<div data-role="footer" data-position="fixed" data-fullscreen="true">
+    <div data-role="navbar">
+        <ul>
+            <li><a id="news" data-icon="comment" class="ui-btn-action">消息</a></li>
+            <li><a id="friends" data-icon="user">联系人</a></li>
+            <li><a id="activities" data-icon="star">动态</a></li>
+        </ul>
+    </div>
+<!--陈国才-->
+</div>
+
+</div>
+</body>
+
+</html>

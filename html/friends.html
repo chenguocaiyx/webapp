@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/jquery.mobile.min.css" />
+    <link rel="stylesheet" href="../css/project.css" />
+
+    <script src="../script/jquery-2.1.4.min.js"></script>
+    <script src="../script/jquery.mobile.min.js"></script>
+    <script>
+        function showHint(str)
+        {
+            var xmlhttp;
+            if (str.length==0)
+            {
+                document.getElementById("txtHint").innerHTML="";
+                return;
+            }
+            if (window.XMLHttpRequest)
+            {
+                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                xmlhttp=new XMLHttpRequest();
+            }
+            else
+            {
+                // IE6, IE5 浏览器执行代码
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function()
+            {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET","http://193.112.132.228/gethit.php?q="+str,true);
+            xmlhttp.send();
+        }
+    </script>
+
+    <title>联系人</title>
+</head>
+<body>
+<div data-role="page">
+
+    <div data-role="header" data-position="fixed" data-fullscreen="true" class="header">
+        <a href="#" class="ui-btn ui-icon-search ui-shadow ui-corner-all ui-btn-icon-notext"></a>
+        <h1>联系人</h1>
+        <a href="#">添加</a>
+    </div>
+    <br><br>
+    <form method="post" action="#">
+        <input type="search" id="txt1" onkeyup="showHint(this.value)" />
+    </form>
+    <p>提示信息: <span id="txtHint"></span></p>
+    <div data-role="main">
+    <ul data-role="listview">
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+            <li><a>消息列表</a></li>
+        </ul>
+</div>
+</div>
+<!--陈国才-->
+
+</body>
+</html>
