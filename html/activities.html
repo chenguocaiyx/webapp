@@ -5,70 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="../css/jquery.mobile.min.css" />
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/project.css" />
+    <link rel="stylesheet" href="../css/main.css">
 
     <script src="../script/jquery-2.1.4.min.js"></script>
     <script src="../script/jquery.mobile.min.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <style type="text/css">
-        .a{
-            /*height: 100px;*/
-            /*width: 102px;*/
-            background-color: #7A8B8B;
-            text-align: center;
-            padding: 20px 20px 20px 20px;
-            margin: 5px 5px 5px 0px;
-            font-size: 14px;
-            color: #FFFFFF;
-            transform: scale3d(1, 1, 1);
-            opacity: 0.8;
-        }
-        /*加入动态效果*/
-        .a:hover{
-            transform: scale3d(1.05, 1.05, 1.05);
-        }
-        .list{
-            margin-top: 50px;
-            /*margin-left: 0px;*/
-        }
-        .page{
-
-            background:radial-gradient( #FFFFFF, #00FFFF);
-        }
-
-
-        .b .ui-block-a {
-            width: 54%;
-        }
-        .b .ui-block-b{
-            width: 42%;
-        }
-        .c .ui-block-a {
-            width: 40%;
-        }
-        .c .ui-block-b{
-            width: 56%;
-        }
-        .ui-block-a{
-            width: 98%;
-        }
-        .d .ui-block-a {
-            width: 48%;
-        }
-        .d .ui-block-b{
-            width: 48%;
-        }
-        .e .ui-block-a {
-            width: 55%;
-        }
-        .e .ui-block-b{
-            width: 41%;
-        }
-        .list{
-            margin-left: 5px;
-        }
 
     </style>
 
@@ -76,14 +19,13 @@
 </head>
 <body>
 <div data-role="page" class="page">
+    <!--页面头部-->
     <div data-role="header" data-position="fixed" data-fullscreen="true" class="header">
         <a href="#" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all"></a>
         <h1>动态</h1>
         <a href="#" class="ui-btn ui-icon-bars ui-shadow ui-corner-all">更多</a>
     </div>
-
-    <!--<div data-role="content" style="padding: 0;">-->
-        <!--<div id="news_page" data-role="mian" class="ui-content" ><br><br>-->
+    <!--功能列表-->
     <div data-role="mian" class="list" >
         <fieldset class="ui-grid-a b">
             <div class="ui-block-a a ">

@@ -6,73 +6,77 @@
 
     <link rel="stylesheet" href="../css/jquery.mobile.min.css" />
     <link rel="stylesheet" href="../css/project.css" />
+    <link rel="stylesheet" href="../css/main.css">
 
     <script src="../script/jquery-2.1.4.min.js"></script>
     <script src="../script/jquery.mobile.min.js"></script>
-    <script>
-        function showHint(str)
-        {
-            var xmlhttp;
-            if (str.length==0)
-            {
-                document.getElementById("txtHint").innerHTML="";
-                return;
-            }
-            if (window.XMLHttpRequest)
-            {
-                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-                xmlhttp=new XMLHttpRequest();
-            }
-            else
-            {
-                // IE6, IE5 浏览器执行代码
-                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            xmlhttp.onreadystatechange=function()
-            {
-                if (xmlhttp.readyState==4 && xmlhttp.status==200)
-                {
-                    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
-                }
-            }
-            xmlhttp.open("GET","http://193.112.132.228/gethit.php?q="+str,true);
-            xmlhttp.send();
-        }
-    </script>
 
     <title>联系人</title>
 </head>
 <body>
 <div data-role="page">
-
+    <!--页面头部-->
     <div data-role="header" data-position="fixed" data-fullscreen="true" class="header">
         <a href="#" class="ui-btn ui-icon-search ui-shadow ui-corner-all ui-btn-icon-notext"></a>
         <h1>联系人</h1>
         <a href="#">添加</a>
     </div>
-    <br><br>
-    <form method="post" action="#">
-        <input type="search" id="txt1" onkeyup="showHint(this.value)" />
-    </form>
-    <p>提示信息: <span id="txtHint"></span></p>
-    <div data-role="main">
-    <ul data-role="listview">
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
-            <li><a>消息列表</a></li>
+  <!--联系人列表-->
+    <!--自动分隔   data-autodividers="true"-->
+    <!--指定列表分割 data-role="list-divider"-->
+    <div data-role="main" class="content">
+        <ul data-role="listview" data-inset="true"data-filter="true">
+            <li data-role="list-divider">B</li>
+            <li>
+                <a href="#">
+                    <img src="../images/b.jpg">
+                    <h2>渤哥</h2>
+                </a>
+            </li>
+            <li data-role="list-divider">H</li>
+            <li>
+                <a href="#">
+                    <img src="../images/hl.jpg">
+                    <h2>红雷哥</h2>
+                </a>
+            </li>
+            <li data-role="list-divider">L</li>
+            <li>
+                <a href="#">
+                    <img src="../images/l.jpg">
+                    <h2>磊哥</h2>
+                </a>
+            </li>
+            <li data-role="list-divider">P</li>
+            <li>
+                <a href="#">
+                    <img src="../images/z.jpg">
+                    <h2>佩琪</h2>
+                </a>
+            </li>
+            <li data-role="list-divider">X</li>
+            <li>
+                <a href="#">
+                    <img src="../images/x.jpg">
+                    <h2>迅哥</h2>
+                </a>
+            </li>
+            <li data-role="list-divider">Y</li>
+            <li >
+                <a href="#">
+                    <img src="../images/yx.jpg">
+                    <h2>艺兴</h2>
+                </a>
+            </li>
+            <!--501陈国才-->
+
+
+
         </ul>
-</div>
+        <!--陈国才-->
+        <p class="end">---到底了---</p>
+
+    </div>
 </div>
 <!--陈国才-->
 

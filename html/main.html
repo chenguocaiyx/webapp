@@ -7,111 +7,139 @@
 
     <link rel="stylesheet" href="../css/jquery.mobile.min.css" />
     <link rel="stylesheet" href="../css/project.css" />
+    <link rel="stylesheet" href="../css/main.css">
+
 
     <script src="../script/jquery-2.1.4.min.js"></script>
     <script src="../script/jquery.mobile.min.js"></script>
 
     <title>首页</title>
     <script>
-        $(function () {
-            $("#news").click(function () {
-                $("#news_page").show();
-                $("#news_header").show();
 
-                $("iframe").hide();
-            });
-
-            $("#friends").click(function () {
-                $("#news_page").hide();
-                $("#news_header").hide();
-
-
-                $("iframe").show();
-                $("iframe").attr("src","friends.html")
-                    .css("height", $(window).height()).show();
-            });
-
-            $("#activities").click(function () {
-                $("#news_page").hide();
-                $("#news_header").hide();
-
-                $("iframe").show();
-                $("iframe").attr("src","activities.html")
-            });
-        });
     </script>
+    <style>
+
+    </style>
     <!--陈国才-->
 </head>
 <body>
 <div data-role="page" id="main">
 <!--面板-->
 <div data-role="panel" id="myPanel">
-    <h1>个人中心</h1>
+    <!--个人信息部分-->
+    <div class="bg_avatar">
+        <div class="msg">
+            <img src="../images/xz.jpg" class="avatar">
+            <h1>小猪配骑</h1>
+        </div>
+
+    </div>
+    <!--功能列表部分-->
+    <div class="bom_list">
+        <!--列表图标-->
+        <ul data-role="listview" class="list" data-inset="true">
+             <li><a href="#"><img src="../images/vip.png" alt="激活会员" class="ui-li-icon ui-corner-none">激活会员</a></li>
+             <li><a href="#"><img src="../images/pay.png" alt="QQ钱包" class="ui-li-icon ui-corner-none">QQ钱包</a></li>
+             <li><a href="#"><img src="../images/个性装扮.png" alt="个性装扮" class="ui-li-icon ui-corner-none">个性装扮</a></li>
+             <li><a href="#"><img src="../images/收藏.png" alt="收藏" class="ui-li-icon ui-corner-none">收藏</a></li>
+             <li><a href="#"><img src="../images/相册.png" alt="我的相册" class="ui-li-icon ui-corner-none">我的相册</a></li>
+             <li><a href="#"><img src="../images/文件.png" alt="我的文件" class="ui-li-icon ui-corner-none">我的文件</a></li>
+             <li><a href="#"><img src="../images/信号塔.png" alt="免流量特权" class="ui-li-icon ui-corner-none">免流量特权</a></li>
+        </ul>
+    </div>
+
 </div>
 <!--页面头部-->
 <div data-role="header" data-position="fixed" id="news_header" data-fullscreen="true" class="header">
-    <a href="#myPanel" data-role="button" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all"></a>
+    <a href="#myPanel" class="pan"><img src="../images/xz.jpg"></a>
     <h1>消息</h1>
     <a href="#myPopup" data-rel="popup" class="ui-btn ui-icon-plus ui-btn-icon-notext ui-shadow ui-corner-all">设置</a>
 </div>
 
+    <!--弹窗-->
     <div data-role="popup" id="myPopup" class="ui-content">
-        <h3>欢迎</h3>
-        <p>这是一个弹窗</p>
-        <p>哈哈哈哈或或或或或或或或或或或或</p>
+        <!--列表图标-->
+        <ul data-role="listview" class="list" data-inset="true">
+             <li><a href="#"><img src="../images/创建.png" alt="创建群聊" class="ui-li-icon ui-corner-none">创建群聊</a></li>
+             <li><a href="#"><img src="../images/添加好友.png" alt="添加好友" class="ui-li-icon ui-corner-none">添加好友</a></li>
+             <li><a href="#"><img src="../images/扫一扫.png" alt="扫一扫" class="ui-li-icon ui-corner-none">扫一扫</a></li>
+             <li><a href="#"><img src="../images/文件.png" alt="面对面快传" class="ui-li-icon ui-corner-none">面对面快传</a></li>
+             <li><a href="#"><img src="../images/付款码.png" alt="付款" class="ui-li-icon ui-corner-none">付款</a></li>
+        </ul>
     </div>
     <!--501陈国才-->
 
 <div data-role="content" style="padding: 0;">
-    <div id="news_page" data-role="mian" class="ui-content" ><br><br>
+
+    <!--加载自定义css 样式-->
+    <link rel="stylesheet" href="../css/main.css">
+    <!--加载js-->
+    <script src="../script/main.js"></script>
+<!--好友列表-->
+    <div id="news_page" data-role="mian" class="ui-content main" >
      <ul data-role="listview">
             <li >
                 <a href="#">
-                    <img src="../images/qybs.jpg">
-                    <h2>史蒂芬</h2>
-                    <p>Where are you?</p>
+                    <img src="../images/yx.jpg">
+                    <h2>艺兴</h2>
+                    <p>小猪哥</p>
+                    <p class="ui-li-aside"><strong>9:18</strong>AM</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="../images/ls.jpg">
-                    <h2>雷神</h2>
+                    <img src="../images/hl.jpg">
+                    <h2>红雷哥</h2>
                     <p>哈哈哈哈或或或或或</p>
+                    <p class="ui-li-aside"><strong>6：00</strong>AM</p>
                 </a>
             </li>
         <!--501陈国才-->
             <li>
                 <a href="#">
-                    <img src="../images/xh.jpg">
-                    <h2>小黄</h2>
+                    <img src="../images/b.jpg">
+                    <h2>渤哥</h2>
                     <p>@#*&%@*&%￥#@#*&@</p>
+                    <p class="ui-li-aside"><strong>6：00</strong>AM</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="../images/zzx.jpg">
-                    <h2>彼得 帕克</h2>
-                    <p>I'm Spider-Man</p>
+                    <img src="../images/l.jpg">
+                    <h2>磊哥</h2>
+                    <p>小猪</p>
+                    <p class="ui-li-aside"><strong>6：00</strong>AM</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="../images/sgdz.jpg">
-                    <h2>罗杰斯队长</h2>
-                    <p>I'm come back!</p>
+                    <img src="../images/x.jpg">
+                    <h2>迅哥</h2>
+                    <p>我来了</p>
+                    <p class="ui-li-aside"><strong>6：00</strong>AM</p>
                 </a>
             </li>
+         <li>
+             <a href="#">
+                 <img src="../images/z.jpg">
+                 <h2>佩琪</h2>
+                 <p>小猪，我是佩琪</p>
+                 <p class="ui-li-aside"><strong>6：00</strong>AM</p>
+             </a>
+         </li>
 
         </ul>
 <!--陈国才-->
     </div>
+    <!--设置显示的page-->
     <iframe src="news.html" style="width: 100%;height: 100% ;border: 0;display: none"></iframe>
+
 </div>
 <!--底部导航栏-->
 <div data-role="footer" data-position="fixed" data-fullscreen="true">
     <div data-role="navbar">
         <ul>
-            <li><a id="news" data-icon="comment" class="ui-btn-action">消息</a></li>
+            <li><a id="news"  class="ui-btn-action ui-icon-new  ui-btn-icon-top">消息</a></li>
             <li><a id="friends" data-icon="user">联系人</a></li>
             <li><a id="activities" data-icon="star">动态</a></li>
         </ul>
