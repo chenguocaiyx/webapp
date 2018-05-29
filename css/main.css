@@ -108,13 +108,17 @@ ul li a img:first-child{
 
 }
 #myPanel .bom_list{
-    height: 425px;
+    height: 400px;
     margin:  -50px -20px 0 -18px;
     /*border-style: solid;*/
 
 }
+.bom_list .a{
+    position: absolute;
+    bottom: 85px;
+}
 
-/*注册页面*/
+/*登录页面*/
 #page{
     animation:myfirst 10s infinite; /*animation 时间 播放次数*/
     animation-direction:alternate; /*是否循环交替反向播放动画*/
@@ -160,6 +164,25 @@ ul li a img:first-child{
 }
 form input{
     color: red;
+}
+
+.form1 input{
+    padding: 6px 145px 6px 10px;
+    margin: 10px 0 0 0;
+    background: none;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+.form1 label {
+    margin-top: 10px;
+    color: black;
+}
+.bottom a{
+    color: black;
 }
 
 /*动态页面*/
@@ -219,4 +242,41 @@ form input{
 }
 .list{
     margin-left: 5px;
+}
+
+/*注册页面*/
+.register{
+    background-image: url("../images/224fj.jpg");
+    background-size:cover;
+
+
+}
+.form input{
+    align-items: center;
+    background: none;
+    padding: 5px 80px 5px 10px;
+    margin: 10px 20px 10px 20px;
+   border-color: #22aadd;
+    /*background-color: #7A8B8B;*/
+    /*opacity: 0.8;*/
+
+}
+.form input:nth-of-type(5){
+   padding: 0;
+}
+.form p{
+    padding: 0px 5px 0 5px;
+    margin-left: 18px;
+}
+.form a{
+}
+.form{
+    margin-top: 50px;
+}
+.reg{
+    color: black;
+    text-align: center;
+    font-family: Serif;
+    font-size: 50px;
+    margin-top: 0;
 }

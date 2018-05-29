@@ -15,29 +15,30 @@
 
 </head>
 <body>
-<div data-role="page" id="page" class="">
+<div data-role="page" id="page">
     <div data-role="content" class="login">
+
         <link rel="stylesheet" href="../css/main.css">
 
         <div class="top">
             <img src="../images/qq.png" class="login-img " >
             <h2 class="qq">QQ</h2>
         </div>
-        <form action="#" method="post">
-            <input type="text" name="userName" id="userName" placeholder="账号" >
-            <input type="password" name="passWd" id="passWd" placeholder="密码">
+        <form action="#" method="post" class="form1">
+            <input type="text" name="userName"  placeholder="账号" data-role="none" >
+            <input type="password" name="passWd"  placeholder="密码" data-role="none">
             <label>记住密码</label>
             <select data-role="slider" name="slider" id="slider">
                 <option value="off">off</option>
                 <option value="on">on</option>
             </select>
-            <a href="main.html" data-role="button"  data-ajax="false">登录</a>
+            <a href="main.html" class="ui-btn" >登录</a>
 
         </form>
 
         <div class="bottom">
             <a href="#">忘记密码? </a>
-            <a href="register.html" class="right"  data-ajax="false">新用户注册</a>
+            <a href="register.html" class="right" >新用户注册</a>
         </div>
         <!--501陈国才-->
 

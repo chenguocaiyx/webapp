@@ -24,4 +24,5 @@ $(function () {
         $("iframe").attr("src","activities.html")
             .css("height", $(window).height()).show();
     });
+
 });

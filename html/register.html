@@ -13,33 +13,34 @@
     <title>注册</title>
 </head>
 <body>
-<div data-role="page">
+<div data-role="page" class="register">
 
-    <div data-role="header" data-position="fixed">
-        <h1>注册</h1>
-    </div>
+    <!--<div data-role="header" data-position="fixed">-->
+        <!--<h1>注册</h1>-->
+    <!--</div>-->
 
     <div data-role="content">
-        <form action="#" method="post">
-            <input type="text" name="userName" id="userName" placeholder="账号" >
-            <input type="password" name="passWd" id="passWd" placeholder="密码">
-            <input type="password" name="rePwd" id="rePwd" placeholder="确认密码">
-            <input type="email" name="email" id="email" placeholder="邮箱">
-            <label>生日</label>
-            <input type="date" name="date" id="date">
-            <p class="ui-btn-inline">是否同意</p>
-            <a href="#">服务条款</a>
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox">我同意</label>
-            <a data-role="button" href="login.html">注册</a>
+
+        <link rel="stylesheet" href="../css/main.css">
+            <h1 class="reg">注册</h1>
+        <form action="#" method="post" class="form">
+            <input type="text" name="userName"  placeholder="用户名" data-role="none">
+            <input type="password" name="passWd"  placeholder="密码" data-role="none">
+            <input type="password" name="rePwd" id="rePwd" placeholder="确认密码" data-role="none">
+            <input type="email" name="email" id="email" placeholder="邮箱" data-role="none">
+            <p class="ui-btn-inline">生日 </p>
+            <input type="date" name="date" id="date" data-role="none">
+            <p class="ui-btn-inline">我同意<input type="checkbox" name="checkbox" id="checkbox" data-role="none"></p>
+            <p class="ui-btn-inline">是否同意 <a href="#">服务条款</a></p>
+            <a  href="login.html" class="ui-btn">注册</a>
 
         </form>
         <!--501陈国才-->
     </div>
 
-    <div data-role="footer" data-position="fixed">
-        <h1>© 2018 qq</h1>
-    </div>
+    <!--<div data-role="footer" data-position="fixed">-->
+        <!--<h1>© 2018 gcchen</h1>-->
+    <!--</div>-->
 
 </div>
 
