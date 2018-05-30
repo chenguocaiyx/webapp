@@ -3,6 +3,7 @@ $(function () {
         $("#news_page").show();
         $("#news_header").show();
 
+
         $("iframe").hide();
     });
 
@@ -24,5 +25,11 @@ $(function () {
         $("iframe").attr("src","activities.html")
             .css("height", $(window).height()).show();
     });
+});
 
+// 右滑事件
+$(document).ready(function () {
+   $("div").bind("swiperight",function (event) {
+       $("#myPanel").panel("open");
+   });
 });

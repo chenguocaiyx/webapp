@@ -118,12 +118,14 @@ ul li a img:first-child{
     bottom: 85px;
 }
 
+
 /*登录页面*/
 #page{
     animation:myfirst 10s infinite; /*animation 时间 播放次数*/
     animation-direction:alternate; /*是否循环交替反向播放动画*/
 
 }
+/*定义动画*/
 @keyframes myfirst
 {
     0% {background:#87CEFF;}
@@ -173,9 +175,8 @@ form input{
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
-    border-bottom-style: solid;
-    border-color: white;
-    border-width: 1px;
+    border-bottom: 1px white solid;
+
 }
 .form1 label {
     margin-top: 10px;
@@ -246,17 +247,19 @@ form input{
 
 /*注册页面*/
 .register{
-    background-image: url("../images/224fj.jpg");
+    background-image: url("../images/bg.jpg");
     background-size:cover;
-
-
+    height: 500px;
 }
 .form input{
     align-items: center;
     background: none;
-    padding: 5px 80px 5px 10px;
+    padding: 5px 100px 5px 10px;
     margin: 10px 20px 10px 20px;
-   border-color: #22aadd;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px white solid;
     /*background-color: #7A8B8B;*/
     /*opacity: 0.8;*/
 
@@ -267,16 +270,26 @@ form input{
 .form p{
     padding: 0px 5px 0 5px;
     margin-left: 18px;
+    color: white;
+    font-family: Serif;
 }
 .form a{
+    color: blue;
+    outline: none;
+    font-size: 20px;
 }
 .form{
     margin-top: 50px;
+    opacity: 0.7;
 }
 .reg{
-    color: black;
+    color: white;
     text-align: center;
     font-family: Serif;
     font-size: 50px;
     margin-top: 0;
 }
+.ui-text{
+    color: black;
+}
+

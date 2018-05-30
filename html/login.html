@@ -17,13 +17,14 @@
 <body>
 <div data-role="page" id="page">
     <div data-role="content" class="login">
-
+        <!--引入css-->
         <link rel="stylesheet" href="../css/main.css">
-
+        <!--qq图标和文字-->
         <div class="top">
             <img src="../images/qq.png" class="login-img " >
             <h2 class="qq">QQ</h2>
         </div>
+        <!--注册表单-->
         <form action="#" method="post" class="form1">
             <input type="text" name="userName"  placeholder="账号" data-role="none" >
             <input type="password" name="passWd"  placeholder="密码" data-role="none">
@@ -32,7 +33,7 @@
                 <option value="off">off</option>
                 <option value="on">on</option>
             </select>
-            <a href="main.html" class="ui-btn" >登录</a>
+            <a href="main.html" class="ui-btn" data-ajax="false" >登录</a>
 
         </form>
 
