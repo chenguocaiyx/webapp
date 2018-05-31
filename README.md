@@ -5,7 +5,7 @@
 问题
 1、页面跳转无法加载 js 和 css
 原因：
-jqm的ajax页面跳转，实际上是通过一个ajax请求，将目标页面的 <div data-role="page" > </div>以内的dom结构复制过来
+jqm 的 ajax 页面跳转，实际上是通过一个ajax请求，将目标页面的 <div data-role="page" > </div>以内的dom结构复制过来
 假如有a.html,b.html二个页面，a的源页面，b是目标页面
 如果b.html做为目标页面，则不需要加载jquery mobile的js和css资源，跳转并没有实际发生，还是在a.html，只不过把b.html的dom复制到了a.html
 
@@ -15,3 +15,7 @@ jqm的ajax页面跳转，实际上是通过一个ajax请求，将目标页面的
 
 为了解决这个，在网上找了好多办法，原文连接https://blog.csdn.net/java_mars/article/details/22571961
 感谢！
+
+2018/5/29
+1、去除jquery mobile 默认样式  (在标签中添加 data-role="none");
+2、页面跳转禁 ajax 方式跳转 (在标签中添加 data-ajax="false");
