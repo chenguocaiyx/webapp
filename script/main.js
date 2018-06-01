@@ -34,6 +34,25 @@ $(document).ready(function () {
    });
 });
 
+// 501陈国才
+
+// 左滑事件
+$(document).ready(function () {
+    $("div").bind("swipeleft",function (event) {
+        $("#myPanel1").panel("open");
+    });
+});
+
+// 501陈国才
+
+//停止滚屏
+$(document).on("pagecreate","#friends",function(){
+    $(document).on("scrollstop",function(){
+        alert("到底了!");
+    });
+});
+// 501陈国才
+
 // swiper插件
 var swiper = new Swiper('.swiper-container',{
     direction : 'vertical',

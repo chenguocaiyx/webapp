@@ -12,9 +12,17 @@
     <script src="../script/jquery.mobile.min.js"></script>
 
     <title>联系人</title>
+    <script>
+        //停止滚屏
+        $(document).on("pagecreate","#friends",function(){
+            $(document).on("scrollstop",function(){
+                alert("到底了!");
+            });
+        });
+    </script>
 </head>
 <body>
-    <div data-role="page">
+    <div data-role="page" id="friends">
 
         <!--页面头部-->
         <div data-role="header" data-position="fixed" data-fullscreen="true" class="header">
